@@ -1,0 +1,289 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fr-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Country outline stroke-draw (paths authored with pathLength="1") */
+.country-outline path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset 1.2s var(--cut-ease);
+  transition-delay: var(--draw-delay, 0s);
+}
+.country-outline.drawn path {
+  stroke-dashoffset: 0;
+}
+
+@keyframes fr-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@layer base {
+  :root {
+    /* FILMOGRAPHIE RAISONNÉE — Light mode "Reading Room" */
+    --paper: #FAFAF7;
+    --paper-2: #F2F0E9;
+    --ink: #111111;
+    --ink-2: #3C3B37;
+    --mute: #7A786F;
+    --line: #E0DED5;
+    --line-strong: #111111;
+    --red: #D81E1E;
+    --red-dark: #A81313;
+
+    --paper-rgb: 250 250 247;
+    --paper-2-rgb: 242 240 233;
+    --ink-rgb: 17 17 17;
+    --ink-2-rgb: 60 59 55;
+    --mute-rgb: 122 120 111;
+    --line-rgb: 224 222 213;
+    --line-strong-rgb: 17 17 17;
+    --red-rgb: 216 30 30;
+    --red-dark-rgb: 168 19 19;
+
+    --cut-ease: cubic-bezier(0.16, 1, 0.3, 1);
+
+    /* shadcn/ui */
+    --background: 60 14% 97%;
+    --foreground: 0 0% 7%;
+    --card: 60 14% 97%;
+    --card-foreground: 0 0% 7%;
+    --popover: 60 14% 97%;
+    --popover-foreground: 0 0% 7%;
+    --primary: 0 0% 7%;
+    --primary-foreground: 60 14% 97%;
+    --secondary: 48 17% 93%;
+    --secondary-foreground: 0 0% 7%;
+    --muted: 48 17% 93%;
+    --muted-foreground: 45 5% 47%;
+    --accent: 48 17% 93%;
+    --accent-foreground: 0 0% 7%;
+    --destructive: 0 76% 48%;
+    --destructive-foreground: 60 14% 97%;
+    --border: 48 15% 86%;
+    --input: 48 15% 86%;
+    --ring: 0 76% 48%;
+    --radius: 0;
+    --sidebar-background: 60 14% 97%;
+    --sidebar-foreground: 0 0% 7%;
+    --sidebar-primary: 0 0% 7%;
+    --sidebar-primary-foreground: 60 14% 97%;
+    --sidebar-accent: 48 17% 93%;
+    --sidebar-accent-foreground: 0 0% 7%;
+    --sidebar-border: 48 15% 86%;
+    --sidebar-ring: 0 76% 48%;
+  }
+
+  .dark {
+    /* Dark mode "Screening Room" */
+    --paper: #0D0D0C;
+    --paper-2: #161613;
+    --ink: #F4F2EA;
+    --ink-2: #B9B7AC;
+    --mute: #6E6C63;
+    --line: #2B2A26;
+    --line-strong: #F4F2EA;
+    --red: #E63329;
+    --red-dark: #D81E1E;
+
+    --paper-rgb: 13 13 12;
+    --paper-2-rgb: 22 22 19;
+    --ink-rgb: 244 242 234;
+    --ink-2-rgb: 185 183 172;
+    --mute-rgb: 110 108 99;
+    --line-rgb: 43 42 38;
+    --line-strong-rgb: 244 242 234;
+    --red-rgb: 230 51 41;
+    --red-dark-rgb: 216 30 30;
+
+    --background: 60 3% 5%;
+    --foreground: 48 13% 94%;
+    --card: 60 3% 5%;
+    --card-foreground: 48 13% 94%;
+    --popover: 60 3% 5%;
+    --popover-foreground: 48 13% 94%;
+    --primary: 48 13% 94%;
+    --primary-foreground: 60 3% 5%;
+    --secondary: 60 5% 9%;
+    --secondary-foreground: 48 13% 94%;
+    --muted: 60 5% 9%;
+    --muted-foreground: 50 3% 41%;
+    --accent: 60 5% 9%;
+    --accent-foreground: 48 13% 94%;
+    --border: 45 6% 17%;
+    --input: 45 6% 17%;
+    --sidebar-background: 60 3% 5%;
+    --sidebar-foreground: 48 13% 94%;
+    --sidebar-primary: 48 13% 94%;
+    --sidebar-primary-foreground: 60 3% 5%;
+    --sidebar-accent: 60 5% 9%;
+    --sidebar-accent-foreground: 48 13% 94%;
+    --sidebar-border: 45 6% 17%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  html.lenis, html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  body {
+    @apply bg-paper text-ink font-serif antialiased;
+    font-optical-sizing: auto;
+  }
+  ::selection {
+    background: var(--red);
+    color: var(--paper);
+  }
+  :focus-visible {
+    outline: 2px solid var(--red);
+    outline-offset: 2px;
+  }
+  html.custom-cursor body,
+  html.custom-cursor a,
+  html.custom-cursor button,
+  html.custom-cursor [role='button'] {
+    cursor: none;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ------------------------------ Type scale ------------------------------ */
+@layer components {
+  .t-hero {
+    @apply font-display font-semibold uppercase;
+    font-size: clamp(3.25rem, 11vw, 10rem);
+    line-height: 0.92;
+    letter-spacing: -0.005em;
+  }
+  .t-display-1 {
+    @apply font-display font-semibold uppercase;
+    font-size: clamp(2.5rem, 6.5vw, 5.5rem);
+    line-height: 0.95;
+    letter-spacing: -0.005em;
+  }
+  .t-display-2 {
+    @apply font-display font-semibold uppercase;
+    font-size: clamp(1.9rem, 4vw, 3.25rem);
+    line-height: 1;
+  }
+  .t-display-3 {
+    @apply font-display font-medium uppercase;
+    font-size: clamp(1.3rem, 2.4vw, 1.9rem);
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+  }
+  .t-kicker {
+    @apply font-sans font-semibold uppercase;
+    font-size: 0.6875rem;
+    letter-spacing: 0.16em;
+  }
+  .t-lede {
+    @apply font-serif;
+    font-size: 1.375rem;
+    line-height: 1.55;
+  }
+  .t-body {
+    @apply font-serif;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    max-width: 68ch;
+  }
+  .t-body-lg {
+    @apply font-serif;
+    font-size: 1.125rem;
+    line-height: 1.75;
+  }
+  .t-quote {
+    @apply font-serif;
+    font-size: clamp(1.4rem, 2.6vw, 2rem);
+    line-height: 1.4;
+  }
+  .t-mono {
+    @apply font-mono uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+  }
+  .t-mono-body {
+    @apply font-mono;
+    font-size: 0.8125rem;
+    line-height: 1.65;
+  }
+  .t-micro {
+    @apply font-sans font-semibold uppercase;
+    font-size: 0.6875rem;
+    letter-spacing: 0.14em;
+  }
+
+  .container-site {
+    @apply mx-auto w-full max-w-site px-6 md:px-12 min-[1440px]:px-16;
+  }
+
+  /* --------------------------- Buttons / links --------------------------- */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-ink text-paper font-sans font-semibold uppercase
+      border border-ink transition-colors duration-150 hover:bg-red hover:border-red active:scale-[0.97];
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    padding: 14px 28px;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 bg-transparent text-ink font-sans font-semibold uppercase
+      border border-ink transition-colors duration-150 hover:bg-ink hover:text-paper active:scale-[0.97];
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    padding: 14px 28px;
+  }
+  .link-text {
+    @apply relative inline-flex items-baseline gap-1 underline decoration-1 underline-offset-[3px]
+      transition-colors duration-150 hover:text-red hover:decoration-red;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1.5 border border-ink font-sans font-semibold uppercase
+      transition-colors duration-150 hover:bg-ink hover:text-paper;
+    font-size: 0.6875rem;
+    letter-spacing: 0.14em;
+    padding: 8px 14px;
+  }
+  .chip[data-active='true'] {
+    @apply bg-ink text-paper;
+  }
+
+  /* Full-bleed ink band that stays ink in both themes ("screening room") */
+  .band-ink {
+    background-color: #111111;
+    color: #fafaf7;
+  }
+  .dark .band-ink {
+    background-color: #161613;
+  }
+}
