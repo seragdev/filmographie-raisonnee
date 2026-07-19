@@ -1,0 +1,54 @@
+# ======================================================================
+# ACTIVATION REQUIRED (one manual step, 30 seconds):
+# The token used to seed this repo lacks GitHub's `workflow` permission,
+# so this file could not be placed in .github/workflows/ automatically.
+# To activate CI: in the GitHub web UI, create the file
+#     .github/workflows/deploy-ovh.yml
+# with the exact content below (copy everything under the ---CUT--- line),
+# then add the 4 FTP secrets described in README.md. Done.
+# ======================================================================
+# ---CUT---
+name: Build & Deploy to OVHcloud
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Restore binary brand assets (logos, favicon, og-image)
+        run: bash scripts/restore-assets.sh
+
+      - name: Fetch & parse thesis data (HAL -> public/data)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils
+          bash scripts/fetch-data.sh
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build static site (dist/)
+        run: npm run build
+
+      - name: Deploy dist/ to OVHcloud via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: ${{ secrets.FTP_SERVER_DIR }}
+          # .htaccess (SPA fallback) ships inside dist/ via public/
+          dangerous-clean-slate: true
