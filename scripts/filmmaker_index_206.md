@@ -1,0 +1,221 @@
+# Filmographie Raisonnée — filmmaker entry index (auto-extracted from full.txt)
+
+Counts: Égypte 63 | Liban 80 | Tunisie 63 | TOTAL 206 filmmakers; ~1,179 film entries
+
+Heading format is normally 'Nom, Prénom (variantes)'; 3 Tunisie entries use 'Nom Prénom' without comma (marked *).
+
+
+## Égypte (63)  [lines 25233-27972]
+
+- L25235: Abdalla, Hanan
+- L25247: El-Abnoudy, Ateyyat (Attiat El Abnoudi / Ateyyat Al-Abnoudi)
+- L25385: Abou Ouf, Mariam
+- L25436: Abou Saif, Laila
+- L25445: Abou Zekri, Kamla
+- L25551: Adel, Noha
+- L25562: Alam, Nadia
+- L25570: Amin, Aiten (Ayten)
+- L25624: Amir Salem, Salma
+- L25634: Al Asfouri, Taghrid (Taghreed)
+- L25681: Ayman, Alia
+- L25702: Bakr, Hend
+- L25716: El Bakry, Asma
+- L25810: Benari, Yasmina
+- L25821: El Bialy, Alia
+- L25867: El-Chamaa, Sabine
+- L25895: Dardeer, Atteia
+- L25902: El Degheidi, Inas
+- L26005: Farès-Anliker, Nadia
+- L26124: Fathy, Safaa
+- L26193: Fawzy, Amal
+- L26206: Galal, Hala
+- L26290: Ghali, Nahed
+- L26310: Ghandour, Mona
+- L26337: Hamza, Dina (Dina Mohamed Hamza)
+- L26378: Hamza, Nadia
+- L26439: El Hossamy, May
+- L26489: Kamal-Eldin, Tania
+- L26550: Kamel, Iman
+- L26597: Kamel, Nadia
+- L26624: Kamel, Ferial
+- L26648: Khalil, Hala
+- L26707: Khan, Nadine
+- L26751: El Khoury, Marianne
+- L26797: El Koussy, Hala
+- L26825: Lotfy, Hala
+- L26869: Lotfy, Mona
+- L26891: El Maadawy, Noha
+- L26914: Maamoun, Maha
+- L26968: Maher, Mavie
+- L26991: El Massry, Maysoon
+- L27010: Mikhail, Mirit
+- L27026: Muhammad Ali, Enaam (Inaam)
+- L27114: El Naccache, Soha
+- L27129: Noujaim, Jehane
+- L27198: Rached, Tahani
+- L27417: Ramsis, Amal
+- L27461: El Rashidi, Dalia
+- L27467: Riyadh, Nada
+- L27513: Rezq, Nada
+- L27525: Salem, Nermeen
+- L27540: Salim, Nadia
+- L27559: Seif, Louly
+- L27576: Salib, Nadine
+- L27600: Shalaby, Neveen
+- L27626: Shafik, Viola
+- L27690: El Tahri, Jihan
+- L27813: Talaat, Shereen
+- L27839: El Tarzi, Salma
+- L27852: Yousry, Heba (Heba Yossry)
+- L27881: Zaki, Elweya
+- L27896: El Zayat, Nesrine
+- L27916: Zayed, Mayye
+
+## Liban (80)  [lines 27973-31894]
+
+- L27975: Abou Jamra, Pascale
+- L27989: Abou Shaqra, Shirin
+- L28047: Akl, Mounia
+- L28069: Arbid, Danielle
+- L28217: Arzoumanian, Chaghig
+- L28242: Assaf (Assaf-Tengroth), Leyla
+- L28802: Attar, Inaam
+- L28812: Attieh, Rania
+- L28847: Attiyeh, Ruba
+- L28864: Barakat, Sheila
+- L28880: Bassil, Rita
+- L28893: Bdeir, Dania
+- L28928: Boutros, Sophie
+- L28951: Chahal Sabbag, Randa
+- L29083: Chouaib, Jihane
+- L29122: Choucair, Cynthia
+- L29161: Dabague, Christine
+- L29186: Daccache, Zeina
+- L29211: Daou, Ghina
+- L29228: Eid, Rana
+- L29254: Fadel, Alaa
+- L29267: Farah, Marylin
+- L29275: Fathallah, Dalia
+- L29315: Fathallah, Zeina
+- L29332: Francis, Sarah
+- L29369: El Gemayel, Sabine
+- L29390: Gharzeddine, Nour
+- L29399: Ghorra, Nadine
+- L29407: Gloor-Fadel, Samira
+- L29426: Haddad, Maha
+- L29434: Hadjithomas, Joana
+- L29555: El-Hajj, Myriam
+- L29573: El-Horr, Dima
+- L29603: Hotait, Darine
+- L29617: Hotait, Laila et Nadia
+- L29628: Itani, Niam
+- L29646: Jarjoura, Katia
+- L29748: Jirmanus Saba, Mary
+- L29770: Al-Joundi, Dima
+- L29816: Kachmar, Diala
+- L29827: Kanaan, Leila
+- L29845: Kassem, Farah
+- L29889: Kassem, May
+- L29991: Kassir, Liana
+- L30030: Khlat, Yasmine
+- L30049: Khodr, Nesrine
+- L30071: El Kouch, Hala
+- L30089: Labaki, Nadine
+- L30142: Loutfi, Arab
+- L30219: Lotfy, Nabiha (Nabeeha)
+- L30288: Maakaron, Myrna
+- L30309: Makhlouf Mouarkech, Odette
+- L30322: Mansour, Alaa
+- L30331: Mitri, Reine
+- L30398: Naccache, Tina
+- L30430: Nakkas, Olga
+- L30495: Nammour, Manon
+- L30519: Obeid, Angie
+- L30554: Ouayda, Nour
+- L30599: Partamian, Chantal
+- L30643: Politi, Edna
+- L30740: Raheb, Eliane
+- L30806: Rafei, Rania
+- L30851: Saab, Jocelyne
+- L31277: Saad, Soula
+- L31306: Saba, Doris
+- L31319: Saba, Lara
+- L31361: Saleh, Katia
+- L31382: Saleh, Reem
+- L31400: Samarani, Reem
+- L31412: Samman, Rima
+- L31495: Serhal, Feyrouz
+- L31507: Shawi, Corine
+- L31559: Sfeir, Zeina
+- L31588: Srour, Heiny
+- L31641: Stepanyan, Tamara
+- L31661: Stephan, Rania
+- L31753: Tabet, Sandra
+- L31762: Youssef, Susan
+- L31822: Zéhil, Maryanne
+
+## Tunisie (63)  [lines 31895-34359]
+
+- L31897: Abbassi, Arbia
+- L31919: Abidi, Sarra
+- L31967: Achour, Doria
+- L31985: Amari, Raja
+- L32083: Baccar, Salma
+- L32220: Belaid, Intissar
+- L32242: Ben Aleya Ayda *
+- L32263: Ben Hania, Kaouther
+- L32373: Ben Othman, Ines
+- L32405: Ben Mabrouk, Néjia
+- L32448: Ben Mahmoud Afef *
+- L32455: Ben Mahmoud, Feriel
+- L32568: Ben Slama, Sonia
+- L32591: Ben Slimane, Souad
+- L32605: Benillouche, Sarah
+- L32723: Bhar, Mounira
+- L32741: Blaise, Lilia
+- L32759: Bornaz, Kalthoum
+- L32849: Bouallegui Soumaya *
+- L32864: Boujemaa, Hinde
+- L32901: Bousselmi, Meriam
+- L32918: Bouzid, Leyla
+- L32959: Bouzidi, Chiraz
+- L33001: Chamkhi, Sonia
+- L33069: Chaïbi, Leila
+- L33092: Chakroun, Olfa
+- L33121: Chérif, Fatma
+- L33155: Daoud, Anissa
+- L33174: Delil, Imen
+- L33187: El Fani, Nadia
+- L33301: Fedhila, Moufida
+- L33333: Ferchiou, Sophie
+- L33374: Fradi, Shiraz
+- L33398: Guiga, Nidhal
+- L33423: Guellaty, Amel
+- L33449: Hafaiedh, Nada Mezni
+- L33485: Hafnaoui, Faten
+- L33501: Jaziri, Sana
+- L33518: Kichah, Sonia
+- L33582: Khadhar, Farah
+- L33632: Labidi, Manele (Manele Labidi Labbé)
+- L33656: Lahmar, Ismahane
+- L33704: Lemkecher, Khédija
+- L33725: Louhichi, Maya
+- L33737: Mabouet, Najet
+- L33743: Mahdaoui, Molka
+- L33758: Meddeb, Hind
+- L33814: Najari, Olfa
+- L33829: Najjar, Emna
+- L33848: Nakhli, Alia
+- L33858: Al-Nasiri Boulos, Imène
+- L33871: Nafti, Imen
+- L33881: Rais, Nadia
+- L33918: Riveill, Miriam
+- L33944: Robbana Doghri, Latifa
+- L33956: Saäl, Michka
+- L34073: Saya, Saoussen
+- L34082: Skandrani, Fatma
+- L34183: Slama Liman, Najwa
+- L34219: Tlatli, Moufida
+- L34280: Tlili, Najwa
+- L34303: Touijer, Nadia
+- L34335: Zeghidi, Nejma
