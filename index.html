@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FILMOGRAPHIE RAISONNÉE — Arab Women Filmmakers 1967–2020</title>
+    <meta name="description" content="An open encyclopedia of Arab women filmmakers — 206 entries, ±1,180 films, 24 long-form interviews, one chronology (1940–2020). Built from Mathilde Rouxel's 2020 PhD thesis, cited page by page." />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/logo_avatar.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="FILMOGRAPHIE RAISONNÉE — Arab Women Filmmakers 1967–2020" />
+    <meta property="og:description" content="206 filmmakers · 1,180 films · 3 countries — a reasoned filmography built from Rouxel (2020), Sorbonne Nouvelle – Paris 3." />
+    <meta property="og:image" content="/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/og-image.png" />
+    <script>
+      // Screening-room (dark) theme init — before first paint, no FOUC
+      (function () {
+        try {
+          var stored = localStorage.getItem('fr-theme');
+          var dark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (dark) document.documentElement.classList.add('dark');
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Naskh+Arabic:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
